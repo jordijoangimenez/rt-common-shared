@@ -29,7 +29,7 @@ loopback interface.
 
 When the rt-5gms-application-server (for MVP#1 or MVP#2) is started with this
 configuration, the media should then be accessible, via the M4d interface, using
-{http://localhost/m4d/provisioning-session-d54a1fcc-d411-4e32-807b-2c60dbaeaf5f/BigBuckBunny_4s_onDemand_2014_05_09.mpd}
+{ http://localhost/m4d/provisioning-session-d54a1fcc-d411-4e32-807b-2c60dbaeaf5f/BigBuckBunny_4s_onDemand_2014_05_09.mpd }
 as the media entry URL.
 
 ## `ContentHostingConfiguration_Big-Buck-Bunny_pull-ingest_http_and_https.json`
