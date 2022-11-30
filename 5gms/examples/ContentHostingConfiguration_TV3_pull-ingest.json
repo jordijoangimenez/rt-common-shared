@@ -1,0 +1,20 @@
+{
+  "name": "andaluciatv",
+  "ingestConfiguration": {
+    "pull": true,
+    "protocol": "urn:3gpp:5gms:content-protocol:http-pull-ingest",
+    "entryPoint": "https://directes-tv-int.ccma.cat/"
+  },
+  "distributionConfigurations": [
+    {
+      "canonicalDomainName": "localhost",
+      "domainNameAlias": "10.0.2.2",
+      "pathRewriteRules": [
+	{
+	  "requestPattern": "^/m4d/provisioning-session-[^/]*/",
+	  "mappedPath": "/live-origin/tvi-hls/"
+	}
+      ]
+    }
+  ]
+}
