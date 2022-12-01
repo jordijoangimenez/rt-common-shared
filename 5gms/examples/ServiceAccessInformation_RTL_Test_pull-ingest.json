@@ -2,6 +2,6 @@
   "provisioningSessionId": "d54a1fcc-d411-4e32-807b-2c60dbaeaf5f",
   "provisioningSessionType": "DOWNLINK",
   "streamingAccess": {
-    "mediaPlayerEntry": "http://localhost/m4d/provisioning-session-d54a1fcc-d411-4e32-807b-2c60dbaeaf5f/1.mpd"
+    "mediaPlayerEntry": "http://localhost/m4d/provisioning-session-d54a1fcc-d411-4e32-807b-2c60dbaeaf5f/test5hd.mpd"
   }
 }

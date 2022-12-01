@@ -1,9 +1,9 @@
 {
-  "name": "EBU",
+  "name": "HbbTV",
   "ingestConfiguration": {
     "pull": true,
     "protocol": "urn:3gpp:5gms:content-protocol:http-pull-ingest",
-    "entryPoint": "https://dvb.ebu.io/"
+    "entryPoint": "https://allgaeu-hbb.iptv-playoutcenter.de/"
   },
   "distributionConfigurations": [
     {
@@ -12,7 +12,7 @@
       "pathRewriteRules": [
 	{
 	  "requestPattern": "^/m4d/provisioning-session-[^/]*/",
-	  "mappedPath": "/"
+	  "mappedPath": "/allgaeu-hbb/tvallgaeu.stream_all/"
 	}
       ]
     }
