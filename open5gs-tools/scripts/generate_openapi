@@ -305,10 +305,14 @@ fi
     openapi_gen_url=`eval echo "$OPENAPI_GEN_URL_FORMAT"`
     openapi_gen_jar=`basename "$openapi_gen_url"`
     if [ ! -e "$openapi_gen_jar" ]; then
-        if ! wget "$openapi_gen_url" -O "$openapi_gen_jar"; then
-            echo "Error: Failed to fetch openapi-generator-cli" >&2
-            exit 1
-        fi
+	if [ -e "$scriptdir/$openapi_gen_jar" ]; then
+	    cp "$scriptdir/$openapi_gen_jar" "$openapi_gen_jar"
+	else
+	    if ! wget "$openapi_gen_url" -O "$openapi_gen_jar"; then
+		echo "Error: Failed to fetch openapi-generator-cli" >&2
+		exit 1
+	    fi
+	fi
     fi
 
     # Download JMustache
