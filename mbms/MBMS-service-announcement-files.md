@@ -1,6 +1,6 @@
 # MBMS Service Announcement Files
 
-The `ServiceAnnouncement(SA)` file also referred to as `bootstrap.multipart` in the context of 5G-MAG Reference Tools contains important information about the available broadcast and unicast streams. The 5G-MAG Reference Tools support three main formats. The target format needs to be configured before starting the `rt-mbms-mw` process as an automated format detection at runtime is currently not supported.
+The `ServiceAnnouncement(SA)` file also referred to as `bootstrap.multipart` in the context of 5G-MAG Reference Tools contains important information about the available broadcast and unicast streams. The 5G-MAG Reference Tools support three main formats. The target format needs to be configured before starting the `rt-mbms-client` process (formerly `rt-mbms-mw`) as an automated format detection at runtime is currently not supported.
 
 Examples of the different SA formats can be found in the [rt-common-shared project](https://github.com/5G-MAG/rt-common-shared/tree/feature/mbms/mbms/bootstrap_examples).
 
